@@ -1,0 +1,22 @@
+/* ClientsCarousel.module.css */
+
+.carousel {
+    padding: 20px;
+  }
+  
+  .clientItem {
+    padding: 10px;
+  }
+  
+  .clientImage {
+    width: 100%;
+    height: auto;
+    border-radius: 20px; /* Rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Box shadow for depth */
+    transition: transform 0.3s ease-in-out; /* Smooth transform on hover */
+  }
+  
+  .clientImage:hover {
+    transform: scale(1.05); /* Slightly enlarge image on hover */
+  }
+  
