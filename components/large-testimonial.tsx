@@ -1,5 +1,6 @@
 import Image from "next/image";
-import TestimonialImg from "@/public/images/large-testimonial.jpg";
+import TestimonialImgd from "@/public/images/large-testimonial.jpg";
+import TestimonialImg from "@/public/images/QR2.png";
 
 export default function LargeTestimonial() {
   return (
@@ -24,22 +25,25 @@ export default function LargeTestimonial() {
               <Image
                 className="rounded-full"
                 src={TestimonialImg}
-                width={48}
-                height={48}
+                width={75}
+                height={75}
                 alt="Large testimonial"
               />
             </div>
-            <p className="text-2xl font-bold text-gray-900">
-              “Simple has simplified my life in more ways than one. From
-              managing my sites to{" "}
-              <em className="italic text-gray-500">keeping track of tasks</em>,
-              it's become my go-to tool for everything.”
+
+            
+            
+            <p dir="rtl" className="text-2xl font-bold text-gray-900" style={{ fontFamily: 'CustomFont' , color: "#020944"}}>
+
+            "QRide جاء من فهمنا لسلوك   
+              <em style={{ fontFamily: 'CustomFont' , color: "#6E6EFF"}} className="italic text-gray-500"> المستهلك السعودي</em>،
+              عشان تطلب قهوتك أو وجبتك وانت مرتاح بسيارتك بدون تعب أو انتظار".
             </p>
             <div className="text-sm font-medium text-gray-500">
-              <span className="text-gray-700">Mary Sullivan</span>{" "}
+              <span  style={{ fontFamily: 'CustomFont' }} className="text-gray-700">محمد الجوعي</span>{" "}
               <span className="text-gray-400">/</span>{" "}
-              <a className="text-blue-500" href="#0">
-                CTO at Microsoft
+              <a style={{ fontFamily: 'CustomFont', color: "#6E6EFF" }} className="text-blue-500" href="#0">
+                شريك مؤسس
               </a>
             </div>
           </div>

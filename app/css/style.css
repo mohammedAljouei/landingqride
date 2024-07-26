@@ -7,3 +7,17 @@
 @import "additional-styles/theme.css";
 
 @import "tailwindcss/utilities";
+
+
+/* styles/globals.css */
+@font-face {
+    font-family: 'CustomFont';
+    src: url('../../public/fonts/CustomFont.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+  }
+  
+  body {
+    font-family: 'CustomFont', sans-serif;
+  }
+  

@@ -1,11 +1,13 @@
 import Image from "next/image";
 import Stripes from "@/public/images/stripes-dark.svg";
+import ClientsCarousel from "./ui/ClientsCarousel";
 
 export default function Cta() {
   return (
     <section>
       <div className="mx-auto max-w-6xl px-4 sm:px-6">
         <div
+        style={{backgroundColor: "#020944"}}
           className="relative overflow-hidden rounded-2xl text-center shadow-xl before:pointer-events-none before:absolute before:inset-0 before:-z-10 before:rounded-2xl before:bg-gray-900"
           data-aos="zoom-y-out"
         >
@@ -18,10 +20,12 @@ export default function Cta() {
           </div>
           {/* Stripes illustration */}
           <div
+          
             className="pointer-events-none absolute left-1/2 top-0 -z-10 -translate-x-1/2 transform"
             aria-hidden="true"
           >
             <Image
+            
               className="max-w-none"
               src={Stripes}
               width={768}
@@ -30,17 +34,21 @@ export default function Cta() {
             />
           </div>
           <div className="px-4 py-12 md:px-12 md:py-20">
-            <h2 className="mb-6 border-y text-3xl font-bold text-gray-200 [border-image:linear-gradient(to_right,transparent,theme(colors.slate.700/.7),transparent)1] md:mb-12 md:text-4xl">
-              Create your next project with Simple
+            <h2 dir="rtl" style={{ fontFamily: 'CustomFont' }} className="mb-6 border-y text-3xl font-bold text-gray-200 [border-image:linear-gradient(to_right,transparent,theme(colors.slate.700/.7),transparent)1] md:mb-12 md:text-4xl">
+            تثق به المتاجر الرائعة مثل متجرك!                
             </h2>
-            <div className="mx-auto max-w-xs sm:flex sm:max-w-none sm:justify-center">
+            <ClientsCarousel/>
+            <div  className="mx-auto max-w-xs sm:flex sm:max-w-none sm:justify-center">
               <a
-                className="btn group mb-4 w-full bg-gradient-to-t from-blue-600 to-blue-500 bg-[length:100%_100%] bg-[bottom] text-white shadow hover:bg-[length:100%_150%] sm:mb-0 sm:w-auto"
-                href="#0"
+              style={{backgroundColor: "#6E6EFF"}} 
+                className="btn group mb-4 w-full  bg-[length:100%_100%] bg-[bottom] text-white shadow hover:bg-[length:100%_150%] sm:mb-0 sm:w-auto"
+                href="#contact"
               >
-                <span className="relative inline-flex items-center">
-                  Start Free Trial{" "}
-                  <span className="ml-1 tracking-normal text-blue-300 transition-transform group-hover:translate-x-0.5">
+                <span className="relative inline-flex items-center"
+                    style={{ fontFamily: 'CustomFont', color: "#F2F2F9"}}
+                >
+                تجربة مجانية لمدة شهر{" "}
+                  <span     style={{ fontFamily: 'CustomFont', color: "#F2F2F9"}} className="ml-1 tracking-normal text-blue-300 transition-transform group-hover:translate-x-0.5">
                     -&gt;
                   </span>
                 </span>
